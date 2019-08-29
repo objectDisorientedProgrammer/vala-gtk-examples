@@ -8,12 +8,12 @@ Each example tries to showcase some use of the widget in an easy-to-understand f
 Before running the examples, you will need compile the sources files and for that
 you need the Vala compiler.
 
-First install the vala compiler
+First install the vala compiler and GTK 3 development library.
 
 ### Install vala compiler in debian and debian based systems
 
 ```
-sudo apt-get install valac
+sudo apt-get install valac libgtk-3-dev
 ```
 
 ### Install vala compiler in Arch Linux based systems
@@ -28,9 +28,19 @@ sudo pacman -S vala
 vala --version
 ```
 
-### Compile the example
+### Compile an example
 
-Every example is a standalone file `filename.vala` to compile it use
+Every example is a standalone file `filename.vala`.
+
+To compile every example, use `make all`.
+
+To compile any one example use:
+
+```
+make filename
+```
+
+or alternatively,
 
 ```
 valac filename.vala --pkg gtk+-3.0
