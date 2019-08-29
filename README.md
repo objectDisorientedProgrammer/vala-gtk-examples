@@ -32,7 +32,7 @@ vala --version
 
 Every example is a standalone file `filename.vala`.
 
-To compile each example, use `make all`.
+To compile every example, use `make all`.
 
 To compile any one example use:
 
